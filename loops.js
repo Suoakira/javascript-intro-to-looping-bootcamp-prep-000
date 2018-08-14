@@ -16,15 +16,11 @@ function whileLoop(n) {
   return "done";
 }
 
-var i = 0;
-
-function incrementVariable() {
-  i = i + 1;
-}
-
 function doWhileLoop(array) {
-  do (incrementVariable()) {
+  function () {
+    return Math.random() >= 0.5
+  }
+   do {
     array.pop();
-    } while (array.length > 0 && incrementVariable());
+  } while (array.length > -1 && maybeTrue());
     return array;
-}
