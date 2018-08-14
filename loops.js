@@ -17,10 +17,12 @@ function whileLoop(n) {
 }
 
 function doWhileLoop(array) {
-  function () {
-    return Math.random() >= 0.5
-  }
+  function incrementVariable() {
+  i = i + 1;
+}
    do {
     array.pop();
-  } while (array.length > -1 && maybeTrue());
+  } while (array.length > -1 && incrementVariable());
+  
     return array;
+}
